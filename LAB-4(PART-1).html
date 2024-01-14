@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        td{text-align:center}
+    </style>
+</head>
+<body>
+    <form style="border: 1px solid black;width: fit-content">
+       <table>
+            <caption>Student Registration</caption>
+        <tr>
+            <td>Full Name</td>
+            <td><input type="text" required></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="Email" required></td>
+        </tr>
+        <tr>
+            <td>Mobile Number</td>
+            <td><input type="number" required></td>
+        </tr>
+        <tr>
+           <td>Address</td>
+            <td><textarea name="address" id="" cols="30" rows="10" required></textarea></td>
+        </tr>
+        <tr>
+            <td>Nationality</td>
+            <td><input type="text" required></td>
+        </tr>
+        <tr>
+            <td>Date of Birth</td>
+            <td><input type="date" required></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                MALE:<input type="radio" name="Gender">
+                FEMALE:<input type="radio" name="Gender">
+            </td>
+        </tr>
+        <tr>
+            <td>Highest Degree</td>
+            <td>
+                <select>
+                    <option>Select Degree</option>
+                    <option>CSE</option>
+                    <option>ELECTRICAL</option>
+                    <option>DEPLOMA</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>CPI</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td>University</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Passing year</td>
+            <td>
+                <select>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="Submit">submit</button>
+                <button type="reset">reset</button>
+            </td>
+        </tr>
+       </table>
+    </form>
+</body>
+</html>
