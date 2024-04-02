@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <form class="mx-auto text-center w-75 h-auto">
+    <div>
+      <div class="containor text-center mt-5 text-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-bootstrap-fill "
+          viewBox="0 0 16 16">
+          <path
+            d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z" />
+          <path
+            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z" />
+        </svg>
+      </div>
+      <div class="text-center mt-3">
+        <strong>
+          <h2>Checkout Form</h2>
+        </strong>
+      </div>
+      <div class="col-10 text-center ps-5 ms-5">
+        Below is an example form built entirely with bootstrap form controls.Each required form group has a validation
+        state can be triggred by attempting to submit the form without completing it.
+      </div>
+      <div class="text-start pt-5">
+        <strong>
+          <h2>Billing Adderss</h2>
+        </strong>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-9">
+        <div class="row">
+          <div class="col">
+            <div class="text-start">First Name</div>
+            <input type="text" class="form-control" placeholder="" aria-label="First name">
+          </div>
+          <div class="col">
+            <div class="text-start">Last Name</div>
+            <input type="text" class="form-control" placeholder="" aria-label="Last name">
+          </div>
+        </div>
+
+
+        <div class="text-start">
+          Username
+        </div>
+        <div class="col">
+          <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+          <div class="input-group">
+            <div class="input-group-text">@</div>
+            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-start">Email(Optional)</div>
+          <input type="text" class="form-control" placeholder="you@example.com" aria-label="Last name">
+        </div>
+        <div class="col">
+          <div class="text-start">Address</div>
+          <input type="text" class="form-control" placeholder="1234 Main ST" aria-label="Last name">
+        </div>
+        <div class="col">
+          <div class="text-start">Address 2(Optional)</div>
+          <input type="text" class="form-control" placeholder="Apartment or suite" aria-label="Last name">
+        </div>
+        <div class="row ">
+          <div class="col-sm-7">
+            <div class="text-start">
+              City
+            </div>
+            <input type="Number" class="form-control" aria-label="City">
+          </div>
+          <div class="col-sm">
+            <div class="text-start">
+              State
+            </div>
+            <input type="Number" class="form-control" aria-label="State">
+          </div>
+          <div class="col-sm">
+            <div class="text-start">
+              Zip
+            </div>
+            <input type="text" class="form-control" aria-label="Zip">
+          </div>
+        </div>
+
+        <hr>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <div class="form-check-label text-start" for="flexCheckDefault">
+            Shipping address is the as my billing address
+          </div>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <div class="form-check-label text-start" for="flexCheckChecked">
+            Save this information for next time
+          </div>
+        </div>
+        <hr>
+
+        <div class="text-start">
+          <strong>
+            <h3>Payment</h3>
+          </strong>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <div class="form-check-label text-start" for="flexRadioDefault1">
+            Credit card
+          </div>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <div class="form-check-label text-start" for="flexRadioDefault2">
+            Debit card
+          </div>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <div class="form-check-label text-start" for="flexRadioDefault2">
+            Paypal
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="text-start">Name on card</div>
+            <input type="text" class="form-control" placeholder="" aria-label="First name">
+          </div>
+          <div class="col">
+            <div class="text-start">Credit card number</div>
+            <input type="text" class="form-control" placeholder="" aria-label="Last name">
+          </div>
+        </div>
+        <div class="text-sm text-start text-secondary">
+          Full name as displayed on card
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <div class="text-start">Expiration</div>
+            <input type="text" class="form-control" placeholder="" aria-label="First name">
+          </div>
+          <div class="col-3">
+            <div class="text-start">CVV</div>
+            <input type="text" class="form-control" placeholder="" aria-label="Last name">
+          </div>
+        </div>
+        <hr>
+
+        <button type="submit" class="btn btn-primary w-100">Continue to checkout</button>
+
+      </div>
+
+      <div class="col-3">
+        <div class="row">
+          <div class="col text-start h4 text-secondary">Your cart</div>
+        
+        <div class="col text-end">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z"/>
+          </svg>
+        </div>
+      </div>
+        <ul class="list-group">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+  </form>
+</body>
+
+</html>
